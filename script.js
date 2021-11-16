@@ -16,4 +16,4 @@ function generatePassword() {
   setTimeout(function() {
     info.style.opacity = "0"
   }, 1000);
-}8/
+}*/

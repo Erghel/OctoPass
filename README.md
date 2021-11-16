@@ -12,7 +12,7 @@
 
 Ну и как же без моего любимого YoptaScript
 
-```
+```cs
 йопта generatePassword() жЫ
   участковый писькомер внатуре 23 нахуй
   участковый chars внатуре `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789чобля@#$%^&*-()` нахуй

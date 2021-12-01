@@ -1,5 +1,4 @@
 # PassGenerate
-[Опробовать тут!](https://functionalbaggyglitches.erghel.repl.co/)
 
 *Нажимаем кнопку*
 

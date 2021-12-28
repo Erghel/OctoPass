@@ -11,7 +11,7 @@ function generatePassword() {
     const passwordInput = document.getElementById('password');
     passwordInput.value = password;
 }
-
+// Функция для копирования пароля из input
 function fallbackCopyTextToClipboard(text) {
   const textArea = document.createElement("textarea");
   textArea.value = text;

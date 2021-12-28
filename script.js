@@ -7,7 +7,7 @@ function generatePassword() {
     let n = chars.length;
     for (var i = 0; i < length; ++i) {
         password += chars.charAt(Math.floor(Math.random() * n));
-    }
+    } // Выводим текст в наш input
     const passwordInput = document.getElementById('password');
     passwordInput.value = password;
 }

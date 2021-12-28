@@ -1,3 +1,4 @@
+// Функция для генерирования пароля
 function generatePassword() {
     let length = 25;
     let chars = `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*-()`;

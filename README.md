@@ -1,4 +1,4 @@
-# PassGenerate
+# Password Generator
 
 *Нажимаем кнопку*
 

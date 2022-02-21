@@ -1,59 +1,47 @@
-body {
-  background: linear-gradient(to bottom right, rgb(91, 82, 112), rgb(89, 96, 160));
-  font-family: 'Montserrat', sans-serif;
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 .container {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  padding: 40px;
-  background: #fff
-  border-radius: 20px;
-  border: 1px solid #000;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    padding: 40px;
+    background: #fff
 }
 .el {
-  display: flex;
+    display: flex;
 }
 h2 {
-  text-align: center;
-  margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .inp {
-  padding: 8px;
-  color: #000;
-  font-family: 'Montserrat', sans-serif;;
-  font-weight: 800;
-  text-align: center;
-  border: 2px solid rgb(43, 43, 58);
-  border-radius: 4px;
+    padding: 8px;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;;
+    font-weight: 800;
+    text-align: center;
+    border: 2px solid rgb(43, 43, 58);
+    border-radius: 4px;
 }
 .inp:focus {
-  outline: none;
+    outline: none;
 }
 button {
-  width: 40px;
-  margin-left: 8px;
-  border: 2px so;id rgb(43, 43, 58);
-  border-radius: 4px;
-  transition: 0.2s;
+    width: 40px;
+    margin-left: 8px;
+    border: 2px solid rgb(43, 43, 58);
+    border-radius: 4px;
+    transition: 0.2s;
 }
 button:hover {
-  background: #000;
-  color: #fff;
+    background: #000;
+    color: #fff;
 }
 .info {
-  margin-top: 40px;
-  background: lawngreen;
-  width: 200px;
-  padding: 12px;
-  opacity: 0;
-  text-align: center;
-  transition: 0.15s;
-  animation: slideIn 1.5s linear forwards;
+    margin-top: 40px;
+    background: lawngreen;
+    width: 200px;
+    padding: 12px;
+    opacity: 0;
+    text-align: center;
+    transition: 0.15s;
+    animation: slideIn 1.5s linear forwards;
 }

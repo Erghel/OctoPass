@@ -13,44 +13,47 @@ function generatePassword() {
 }
 // Функция для копирования пароля из input
 function fallbackCopyTextToClipboard(text) {
-  const textArea = document.createElement("textarea");
-  textArea.value = text;
-  
-  textArea.style.top = "0";
-  textArea.style.left = "0";
-  textArea.style.position = "fixed";
+    const textArea = document.createElement("textarea");
+    textArea.value = text;
 
-  document.body.appendChild(textArea);
-  textArea.focus();
-  textArea.select();
+    textArea.style.top = "0";
+    textArea.style.left = "0";
+    textArea.style.position = "fixed";
 
-  try {
-   let successful = document.execCommand('copy');
-   let msg = successful ? 'successful' : 'unsuccessful';
-    console.log('Fallback: Copying text command was ' + msg);
-  } catch (err) {
-    console.error('Fallback: Oops, unable to copy', err);
-  }
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
 
-  document.body.removeChild(textArea);
+    try {
+        let successful = document.execCommand('copy');
+        let msg = successful ? 'successful' : 'unsuccessful';
+        console.log('Fallback: Copying text command was ' + msg);
+    } catch (err) {
+        console.error('Fallback: Oops, unable to copy', err);
+    }
+
+    document.body.removeChild(textArea);
 }
 function copytext() {
-  const text = document.getElementById('password').value
-  if (!navigator.clipboard) {
-    fallbackCopyTextToClipboard(text);
-    return;
-  }
-  navigator.clipboard.writeText(text).then(function() {
-    info.style.opacity = "1";
-    setTimeout(function() {
-      info.style.opacity = "0"
-    }, 1000);
-    console.log('Async: Copying to clipboard was successful!');
-  }, function(err) {
-    console.error('Async: Could not copy text: ', err);
-  });
+    const text = document.getElementById('password').value;
+    if (!navigator.clipboard) {
+        fallbackCopyTextToClipboard(text);
+        return;
+    }
+    navigator.clipboard.writeText(text).then(function() {
+        info.style.opacity = "1";
+        setTimeout(function() {
+            info.style.opacity = "0";
+        }, 1000);
+        console.log('Async: Copying to clipboard was successful!');
+    }, function(err) {
+        console.error('Async: Could not copy text: ', err);
+    });
 }
 
-document.getElementById('copy').addEventListener('click', function(event) {
-  copytext();
+document.getElementById('copy').addEventListener('click', function() {
+    copytext();
 });
+
+document.querySelector("#genPass").addEventListener('click', generatePassword);
+document.querySelector("#copy").addEventListener('click', copytext);

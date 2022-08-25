@@ -1,44 +1,52 @@
 body {
-    background-color: aliceblue;
+    background-color: #f0f8ff;
 }
+
 .container {
     display: flex;
     flex-direction: column;
     max-width: 400px;
     padding: 10px;
-    background: aliceblue;
-  }
-  .el {
+    background: #f0f8ff;
+}
+
+.el {
     display: flex;
-  }
-  h2 {
+}
+
+h2 {
     text-align: center;
     margin-bottom: 10px;
-  }
-  .inp {
+}
+
+.inp {
     padding: 8px;
     color: #000;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: "Montserrat", sans-serif;
     font-weight: 800;
     text-align: center;
-    border: 2px solid rgb(43, 43, 58);
+    border: 2px solid #2b2b3a;
     border-radius: 4px;
-  }
-  .inp:focus {
+}
+
+.inp:focus {
     outline: none;
-  }
-  button {
+}
+
+button {
     width: 40px;
     margin-left: 8px;
-    border: 2px solid rgb(43, 43, 58);
+    border: 2px solid #2b2b3a;
     border-radius: 4px;
     transition: 0.2s;
-  }
-  button:hover {
+}
+
+button:hover {
     background: #000;
     color: #fff;
-  }
-  .info {
+}
+
+.info {
     margin-top: 40px;
     background: lawngreen;
     width: 200px;
@@ -47,10 +55,10 @@ body {
     text-align: center;
     transition: 0.15s;
     animation: slideIn 1.5s linear forwards;
-  }
+}
 
-  p {
+p {
     margin: 5px;
     font-weight: 800;
     font-size: 20px;
-  }
+}

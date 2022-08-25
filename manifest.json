@@ -1,35 +1,33 @@
 {
-  "manifest_version": 2,
-  "name": "OctoPass",
-  "description": "Ваш надежный генератор паролей",
-  "version": "1.0",
-  "content_security_policy": "script-src 'self'; object-src 'self';",
+    "manifest_version": 2,
+    "name": "OctoPass",
+    "description": "Ваш надежный генератор паролей",
+    "version": "1.0",
+    "content_security_policy": "script-src 'self'; object-src 'self';",
 
-  "background": {
-    "scripts": ["script.js"]
-  },
-  "icons": {
-    "48": "images/1.png"
-  },
-  "browser_action": {
-    "default_title": "OctoPass",
-    "default_icon": "images/1.png",
-    "default_popup": "index.html"
-  },
+    "background": {
+        "scripts": ["script.js"]
+    },
+    "icons": {
+        "48": "images/1.png"
+    },
+    "browser_action": {
+        "default_title": "OctoPass",
+        "default_icon": "images/1.png",
+        "default_popup": "index.html"
+    },
 
-  "permissions": [
-    "<all_urls>",
-    "storage",
-    "unlimitedStorage",
-    "contextMenus",
-    "tabs"
-  ],
-  "optional_permissions": [
-    "history"
-  ],
-  "browser_specific_settings": {
-    "gecko": {
-      "strict_min_version": "55.0a2"
+    "permissions": [
+        "<all_urls>",
+        "storage",
+        "unlimitedStorage",
+        "contextMenus",
+        "tabs"
+    ],
+    "optional_permissions": ["history"],
+    "browser_specific_settings": {
+        "gecko": {
+            "strict_min_version": "55.0a2"
+        }
     }
-  }
 }
